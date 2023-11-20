@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -22,47 +24,55 @@ body {
   font-weight: bold;
   font-family: cursive;
 }
-.header-fondo {
-  width: 100%;
-  position: relative;
+main {
+  height: 100%;
 }
-.header-fondo img {
-  width: 100%;
-  height: auto;
+.main-fondo {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  height: 100%;
+  margin: 20px;
+  background-image: url("../assets/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* font-family: cursive; */
+  font-family: 'Recursive', sans-serif;
+  text-align: center;
 }
-.header-fondo .div1 {
-  position: absolute;
-  font-family: cursive;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  padding: 10px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.main-fondo div {
+  grid-column: 2;
+}
+.main-fondo .btn1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.main-fondo div {
   letter-spacing: 1.5px;
 }
-.header-fondo .div2 {
-  position: absolute;
-  font-family: cursive;
-  top: 20%;
-  color: black;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-weight: bold;
-}
-.header-fondo .div2 a {
+.main-fondo a {
+  height: 20px;
   text-decoration: none;
   border: 1px solid #6f0fb2;
   border-radius: 4px;
   background-color: #6f0fb2;
   color: #e3e2ed;
   padding: 7px;
+  margin-top: 50px;
 }
-.header-fondo .div2 a:hover {
+.main-fondo a:hover {
   font-size: 20px;
   background-color: #e3e2ed;
   color: #6f0fb2;
   border: none;
+}
+@media (max-width: 425px) {
+  .main-fondo a {
+    height: 40px;
+    font-size: 13px;
+  }
+  .main-fondo {
+    margin: 10px;
+    background-size: 900px;
+  }
 }
