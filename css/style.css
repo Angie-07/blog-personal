@@ -161,7 +161,7 @@ footer {
   justify-content: center;
   color: #e3e2ed;
 }
-.main-blog{
+.main-blog {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -170,11 +170,11 @@ footer {
   margin: 20px auto;
   gap: 20px;
 }
-.main-blog section{
-  width: 90%; 
+.main-blog section {
+  width: 90%;
   margin: auto;
 }
-.main-blog img{
+.main-blog img {
   width: 100%;
   margin: auto;
 }
@@ -209,7 +209,6 @@ footer {
   }
 }
 @media (max-width: 600px) {
-
   .main-container-article {
     display: grid;
     grid-template-columns: 1fr;
